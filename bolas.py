@@ -39,15 +39,17 @@ bolas = 0
 cuadradi = []
 while bolas <= randint(3, 1000):
     cuadrao = Cuadrado(400, 300, color= (randint(0, 255), randint(0, 255), randint(0, 255)))
-    cuadradi.append(cuadrao) 
+    cuadrao.velocidad(randint(-10, 10), randint(-10, 10))
+    cuadradi.append(cuadrao)
+    
     bolas += 1
 
 #cuadrado = Cuadrado(400, 300, color = (255, 255, 0))
 #cuadrado.velocidad(5, 5)
 #cuadrado2 = Cuadrado(300, 300, 35, 35, (0, 255, 0))
 #cuadrado2.velocidad(randint(-10, 10), randint(-10, 10))
-for h in range(len(cuadradi)):
-    cuadradi[h].velocidad(randint(-10, 10), randint(-10, 10))
+#for h in range(len(cuadradi)):
+ #   cuadradi[h].velocidad(randint(-10, 10), randint(-10, 10))
 
 game_over = False
 while not game_over:
